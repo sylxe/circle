@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Centered Image</title>
+<style>
+  .container {
+    width: 100vw; /* 100% viewport width */
+    height: 100vh; /* 100% viewport height */
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+  
+  .image {
+    width: auto; /* Maintain image aspect ratio */
+    max-width: 80%; /* Adjust max-width as needed */
+  }
+</style>
 </head>
 <body>
 
-<img src="https://cdn.discordapp.com/attachments/1149154478919004222/1240982417892708362/image-removebg-preview.png?ex=66488a70&is=664738f0&hm=f0ec5b57b7cfee92015e54f021d74b6606769e9a44ba96330e2c3b722dc22ca9&" alt="Image description">
+<div class="container">
+  <img src="https://cdn.discordapp.com/attachments/1149154478919004222/1240982417892708362/image-removebg-preview.png?ex=66488a70&is=664738f0&hm=f0ec5b57b7cfee92015e54f021d74b6606769e9a44ba96330e2c3b722dc22ca9&" alt="Image description" class="image">
+</div>
 
 </body>
 </html>
